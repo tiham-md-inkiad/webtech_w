@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>University Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h1 class="title">University Admission Form</h1>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+       
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label>Full Name:</label>
+            <input type="text" name="fullname" required maxlength="50">
+
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <label>Date of Birth:</label>
+            <input type="date" name="dob" required>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male" required> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+
+            <label>Interests:</label>
+            <input type="checkbox" name="interest" value="Sports"> Sports
+            <input type="checkbox" name="interest" value="Programming"> Programming
+            <input type="checkbox" name="interest" value="Music"> Music
+            <input type="checkbox" name="interest" value="Art"> Art
+        </fieldset>
+
+        
+        <fieldset>
+            <legend>Academic Information</legend>
+
+            <label>Last Completed Degree:</label>
+            <input type="text" name="degree" required maxlength="40">
+
+            <label>Institution Name:</label>
+            <input type="text" name="institution" required maxlength="60">
+
+            <label>GPA/CGPA:</label>
+            <input type="text" name="cgpa" required maxlength="5">
+
+            <label>Preferred Department:</label>
+            <select name="department" required>
+                <option value="">-- Select Department --</option>
+                <option value="CSE">Computer Science & Engineering</option>
+                <option value="EEE">Electrical & Electronic Engineering</option>
+                <option value="BBA">Business Administration</option>
+                <option value="Architecture">Architecture</option>
+            </select>
+        </fieldset>
+
+       
+        <fieldset>
+            <legend>Document Upload</legend>
+
+            <label>Upload Photo (jpg/png):</label>
+            <input type="file" name="photo" accept=".jpg,.png" required>
+
+            <label>Upload Transcript (pdf):</label>
+            <input type="file" name="transcript" accept=".pdf" required>
+        </fieldset>
+
+        <div class="buttons">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
